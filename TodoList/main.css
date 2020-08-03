@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(115, 48, 223), rgb(187, 52, 169));
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+form input,
+form button {
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+form button {
+    cursor: pointer;
+    color: blueviolet;
+    transition: all 0.5s ease;
+}
+
+form button:hover {
+    color: #fff;
+    background-color: rgb(119, 48, 220);
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    max-width: 550px;
+    margin: 10px auto;
+    background: #fff;
+    border: none;
+    color: #000;
+    min-height: 65px;
+    border-radius: 10px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.completed-btn,
+.trash-btn {
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0 5px;
+    outline: none;
+}
+
+.completed-btn {
+    color: rgb(0, 180, 9);
+}
+
+.trash-btn {
+    color: rgb(218, 0, 0);
+}
+
+.todo-list-heading {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.fa-trash-restore-alt,
+.fa-check {
+    cursor: pointer;
+}
+
+.text-underline {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.5s ease-in;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.select {
+    color: rgb(150, 43, 238);
+    font-size: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    min-height: 65px;
+    padding-left: 5px;
+    position: relative;
+    margin-left: 10px;
+    min-width: 180px;
+    cursor: pointer;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    font-size: 1.5rem;
+    background: rgb(138 43 226);
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    min-width: 40px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+.todo li,
+.upperCase {
+    text-transform: capitalize;
+}
